@@ -88,8 +88,8 @@ input("\nPress Enter to continue...")
 print('\nRunning gradient descent ...')
 
 # Choose some alpha value
-alpha =  0.1
-num_iters = 50
+alpha =  0.3
+num_iters = 400
 
 # Init Theta and Run Gradient Descent 
 theta = np.zeros((3, 1))

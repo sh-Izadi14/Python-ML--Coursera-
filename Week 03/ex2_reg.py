@@ -141,7 +141,7 @@ plt.ylabel('Microchip Test 2')
 # Compute accuracy on our training set
 p = predict(theta_optimized, X)
 
-print('Train Accuracy: {0}'.format(np.mean((p == y).astype(float)) * 100))
+print('Train Accuracy: {0}\n'.format(np.mean((p.flatten() == y.flatten())) * 100))
 print('Expected accuracy (with Lambda = 1): 83.1 (approx)')
 
 

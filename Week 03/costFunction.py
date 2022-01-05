@@ -86,7 +86,7 @@ def costFunctionReg(theta, X, y, Lambda):
 def gradFunctionReg(theta, X, y, Lambda):
 
     m = len(y)
-    grad = np.zeros([m,1])
+    grad = np.zeros_like(theta)
     grad = (1/m) * X.T @ (sigmoid(X @ theta) - y)
     grad[1:] = grad[1:] + (Lambda / m) * theta[1:]
     

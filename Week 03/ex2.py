@@ -150,7 +150,7 @@ print('Expected value: 0.775 +/- 0.002\n')
 # Compute accuracy on our training set
 p = predict(theta_optimized, X)
 
-print('Train Accuracy: {0}\n'.format(np.mean((p == y).astype(float)) * 100))
+print('Train Accuracy: {0}\n'.format(np.mean((p.flatten() == y.flatten())) * 100))
 print('Expected accuracy (approx): 89.0\n')
 
 plt.show()
