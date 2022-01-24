@@ -181,7 +181,7 @@ input('Press enter to continue...')
 #  lambda to see how the fit and learning curve change.
 #
 
-Lambda = 1
+Lambda = 0
 theta = trainLinearReg(X_poly, y, Lambda)
 
 # Plot training data and fit
@@ -210,7 +210,7 @@ plt.show()
 print('Polynomial Regression (lambda = {})\n\n'.format(Lambda))
 print('# Training Examples\tTrain Error\tCross Validation Error\n')
 for i in range(m):
-    print('  \t{}\t\t{}\t{}\n'.format(i, error_train[i,0], error_val[i,0]))
+    print('  \t{}\t\t{}\t{}\n'.format(i+1, error_train[i,0], error_val[i,0]))
 
 print('Program paused.')
 input('Press enter to continue...')
