@@ -68,7 +68,7 @@ def processEmail(email_contents):
             char = re.sub("[^a-zA-Z0-9]", '', char)
 
             # Stem the word
-            stemmer = PorterStemmit()
+            stemmer = PorterStemmer()
             char = stemmer.stem(char.strip())
 
             if len(char) < 1:
